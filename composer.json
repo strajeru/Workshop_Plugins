@@ -1,0 +1,27 @@
+{
+  "name": "strajeru/workshop-plugins",
+  "description": "Magento 2 Plugins - Workshop purpose",
+  "version": "1.0.0",
+  "license": "MIT",
+  "require": {
+    "magento/framework": "100.1.*",
+    "magento/catalog": "101.1.*",
+    "magento/checkout": "100.1.*",
+    "magento/review": "100.1.*"
+  },
+  "type": "magento2-module",
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/strajeru/Workshop_Plugins"
+    }
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Workshop\\Plugins\\": ""
+    }
+  }
+}
